@@ -68,7 +68,7 @@ async fn invalid_subscribe_form_data_400() {
 
         // Assert
         assert_eq!(
-            404,
+            400,
             response.status().as_u16(),
             // Additional customised error message on test failure
             "The API did not fail with 400 Bad Request when the payload was {}. ",
